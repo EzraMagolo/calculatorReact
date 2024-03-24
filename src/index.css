@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-yellow {
+  @apply bg-yellow-300 shadow-md rounded-2xl w-12 h-12 text-yellow-600 font-medium flex justify-center items-center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn-orange {
+  @apply bg-orange-300 shadow-md rounded-2xl w-12 h-12 text-white font-medium text-xl flex justify-center items-center;
+}
+
+.btn-grey {
+  @apply bg-gray-300 shadow-md rounded-2xl w-12 h-12 text-black font-medium flex justify-center items-center;
+}
+
+.btn-green {
+  @apply bg-green-300 shadow-md rounded-2xl w-12 h-12 text-white font-medium text-xl flex justify-center items-center;
+}
+
+.btn-grey-jumbo {
+  @apply bg-gray-300 shadow-md rounded-2xl w-full h-12 text-black font-medium flex justify-center items-center;
 }
