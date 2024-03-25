@@ -2,16 +2,14 @@ import React, { useState, useEffect } from "react";
 import "./index.css";
 
 function App() {
-  const [date, setDate] = useState(new Date());
   const [number, setNumber] = useState("0");
   const [sum, setSum] = useState("");
 
   // Function to calculate the expression
   const calculate = () => {
     try {
-      // Remove any commas from the expression for evaluation
       const expression = number.replace(/,/g, '');
-      const result = eval(expression); // Using eval() for simplicity (be cautious with eval in production)
+      const result = eval(expression); 
       setSum(result.toLocaleString()); // Format the result with commas
     } catch (error) {
       setSum("Error"); // Display "Error" if there's an issue with the expression
